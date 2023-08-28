@@ -16,7 +16,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Delete
-import androidx.compose.material.icons.filled.Face
+import androidx.compose.material.icons.filled.ShoppingCart
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -144,7 +144,7 @@ fun ArticuloItemUI(articulo: Articulo, onSave: () -> Unit = {}) {
             )
         } else {
             Icon(
-                Icons.Default.Face,
+                Icons.Default.ShoppingCart,
                 contentDescription = "Artículo por comprar",
                 modifier = Modifier.clickable {
                     coroutineScope.launch(Dispatchers.IO) {
